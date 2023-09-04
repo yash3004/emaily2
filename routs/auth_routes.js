@@ -9,11 +9,7 @@ module.exports = (app) => {
         passport.authenticate('github', { scope: [ 'user:email' ] }));
 
     app.get('/auth/github/callback', 
-        passport.authenticate('github', { failureRedirect: '/login' }),
-        function(req, res) {
-        // Successful authentication, redirect home.
-        res.redirect('/');
-    });
+        passport.authenticate('github'));
     app.get('/auth/google' , passport.authenticate('google' , {
         scope : ['profile' , 'email']})
     );
