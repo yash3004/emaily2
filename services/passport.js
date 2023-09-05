@@ -49,7 +49,7 @@ passport.use(new google_stratergy({
 passport.use(new github_stratergy({
     clientID:keys.github_client_id,
     clientSecret:keys.github_client_secret,
-    callbackURL:'/auth/github/callback',
+    callbackURL:keys.github_callback_uri,
     proxy:true
 } , 
 (accessToken , refreshToken , profile , done) => {

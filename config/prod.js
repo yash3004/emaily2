@@ -4,5 +4,7 @@ module.exports = {
     mongodb_uri : process.env.MONGODB_URI,
     cookie_key : process.env.COOKIE_KEY,
     github_client_id:process.env.GITHUB_CLIENT_ID,
-    github_client_secret:process.env.GITHUB_CLIENT_SECRET
+    github_client_secret:process.env.GITHUB_CLIENT_SECRET,
+    github_callback_uri:'https://ochre-yak-cuff.cyclic.app/auth/github/callback'
+
 };
