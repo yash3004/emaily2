@@ -5,6 +5,6 @@ module.exports = {
     cookie_key : 'ajhsahjkhfoanfjahdfunche;urnaadfa',
     github_client_id:'36611647b313a4637aed',
     github_client_secret: '9c765e6f853631129231f7b9351f1fed991ed4ce',
-    github_callback_uri : 'http://localhost:5100/auth/github/callback'
+
     
 };
